@@ -11,7 +11,6 @@ title: Home
 permalink: /
 ---
 
-<!-- Tambahkan ini agar CSS aktif -->
 <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 
 <header>
