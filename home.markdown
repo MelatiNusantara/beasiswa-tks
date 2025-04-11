@@ -11,6 +11,9 @@ title: Home
 permalink: /
 ---
 
+<!-- Tambahkan ini agar CSS aktif -->
+<link rel="stylesheet" href="{{ '/uploads/style.css' | relative_url }}">
+
 <header>
   <div class="logo">Program Beasiswa TKS</div>
   <nav>
