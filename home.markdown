@@ -5,43 +5,83 @@ permalink: "/"
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ '/uploads/style.css' | relative_url }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiplab - Scholarship</title>
+  <link rel="stylesheet" href="/uploads/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="/images/logo.png" alt="Shiplab Logo" class="logo">
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#program">Program</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#register">Register</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="logo">Program Beasiswa TKS</div>
-  <nav>
-    <a href="#about">Tentang</a>
-    <a href="#program">Program</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#register">Daftar</a>
-  </nav>
-</header>
+  <section class="hero">
+    <div class="container">
+      <h1>Beasiswa TKS</h1>
+      <p>Kesempatan emas untuk berkontribusi dan berkembang bersama Shiplab!</p>
+      <a href="#register" class="btn-primary">Daftar Sekarang</a>
+    </div>
+  </section>
 
-<section class="hero">
-  <h1>Beasiswa TKS untuk Generasi Berprestasi</h1>
-  <p>Kesempatan meraih mimpi lewat pendidikan berkualitas!</p>
-</section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Tentang Beasiswa</h2>
+      <p>Program beasiswa TKS memberikan dukungan finansial dan pelatihan bagi mahasiswa/i terbaik yang ingin mengembangkan diri di bidang teknologi, penelitian, dan kewirausahaan.</p>
+    </div>
+  </section>
 
-<section id="about">
-  <h2 class="section-title">Tentang Kami</h2>
-  <p class="section-content">Beasiswa TKS hadir untuk memberikan kesempatan pendidikan bagi pelajar berprestasi di seluruh Indonesia. Kami percaya setiap anak berhak mendapatkan akses pendidikan terbaik.</p>
-</section>
+  <section id="program" class="section section-alt">
+    <div class="container">
+      <h2>Program Beasiswa</h2>
+      <ul class="program-list">
+        <li><strong>Pelatihan Riset:</strong> Bimbingan langsung dari peneliti Shiplab.</li>
+        <li><strong>Magang Industri:</strong> Pengalaman kerja nyata di proyek teknologi maritim.</li>
+        <li><strong>Dukungan Finansial:</strong> Bantuan dana pendidikan dan operasional.</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="program">
-  <h2 class="section-title">Program Beasiswa</h2>
-  <p class="section-content">Mendukung biaya pendidikan, pelatihan keterampilan, serta pendampingan selama masa studi. Terbuka untuk SMA/SMK dan mahasiswa.</p>
-</section>
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2>Timeline Pendaftaran</h2>
+      <ol class="timeline">
+        <li><strong>1 - 15 April:</strong> Pendaftaran Online</li>
+        <li><strong>16 - 20 April:</strong> Seleksi Berkas</li>
+        <li><strong>21 April:</strong> Pengumuman Hasil</li>
+      </ol>
+    </div>
+  </section>
 
-<section id="timeline">
-  <h2 class="section-title">Timeline Pendaftaran</h2>
-  <p class="section-content">- Pendaftaran: 1 Mei - 31 Mei<br>- Seleksi Berkas: 1 - 7 Juni<br>- Wawancara: 10 - 15 Juni<br>- Pengumuman: 20 Juni</p>
-</section>
+  <section id="register" class="section section-alt">
+    <div class="container">
+      <h2>Formulir Pendaftaran</h2>
+      <form class="form-register">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Motivasi Anda" required></textarea>
+        <button type="submit" class="btn-primary">Kirim</button>
+      </form>
+    </div>
+  </section>
 
-<section id="register">
-  <h2 class="section-title">Cara Mendaftar</h2>
-  <p class="section-content">1. Siapkan dokumen persyaratan<br>2. Isi formulir pendaftaran online<br>3. Tunggu pengumuman selanjutnya melalui email</p>
-</section>
-
-<footer>
-  &copy; 2025 Program Beasiswa TKS. All rights reserved.
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shiplab Scholarship. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
