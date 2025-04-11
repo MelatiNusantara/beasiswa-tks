@@ -5,12 +5,6 @@ permalink: "/"
 layout: default
 ---
 
----
-layout: default
-title: Home
-permalink: /
----
-
 <link rel="stylesheet" href="{{ '/uploads/style.css' | relative_url }}">
 
 <header>
