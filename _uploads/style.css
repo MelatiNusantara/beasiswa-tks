@@ -1,4 +1,5 @@
-/* Reset dan default style */
+/* style.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,84 +7,101 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: #fdfcf9;
   color: #333;
-  background-color: #fff;
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header style */
 header {
-  background-color: #007BFF;
-  color: white;
+  background-color: #f6f2ea;
   padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e3d8c7;
 }
 
-header .logo {
+header h1 {
   font-size: 24px;
-  font-weight: bold;
-}
-
-nav {
-  margin-top: 10px;
+  font-weight: 700;
+  color: #bb9a57;
 }
 
 nav a {
-  margin-right: 20px;
-  color: white;
-  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5c4b2c;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-/* Hero section */
+nav a:hover {
+  color: #bb9a57;
+}
+
 .hero {
-  background: linear-gradient(to right, #007BFF, #00BFFF);
-  color: white;
-  padding: 80px 40px;
+  background-image: url('/beasiswa-tks/uploads/hero-bg.jpg'); /* ganti dengan background milikmu */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 40px;
   text-align: center;
+  color: white;
 }
 
 .hero h1 {
   font-size: 48px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Section umum */
 section {
   padding: 60px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-.section-title {
-  font-size: 32px;
+section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #bb9a57;
   margin-bottom: 20px;
-  text-align: center;
-  color: #007BFF;
 }
 
-.section-content {
+section p {
+  font-size: 16px;
+  color: #444;
   max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
 }
 
-/* Footer */
+.link-daftar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #bb9a57;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link-daftar:hover {
+  background-color: #a78845;
+}
+
 footer {
-  background-color: #f5f5f5;
-  padding: 20px;
+  background-color: #f6f2ea;
   text-align: center;
-  color: #666;
+  padding: 20px;
   font-size: 14px;
+  color: #555;
 }
