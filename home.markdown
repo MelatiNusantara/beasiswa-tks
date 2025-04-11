@@ -14,7 +14,7 @@ permalink: /
 <link rel="stylesheet" href="{{ '/uploads/style.css' | relative_url }}">
 
 <header>
-  <div class="logo">Program Beasiswa TKS mama</div>
+  <div class="logo">Program Beasiswa TKS</div>
   <nav>
     <a href="#about">Tentang</a>
     <a href="#program">Program</a>
