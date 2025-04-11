@@ -10,7 +10,7 @@ layout: default
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shiplab - Scholarship halo</title>
+  <title>Shiplab - Scholarship</title>
   <link rel="stylesheet" href="/uploads/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@ layout: default
     <div class="container">
       <img src="/images/logo.png" alt="Shiplab Logo" class="logo">
       <nav class="nav">
-        <a href="#about">About</a>
+        <a href="#about">About halo</a>
         <a href="#program">Program</a>
         <a href="#timeline">Timeline</a>
         <a href="#register">Register</a>
