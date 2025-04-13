@@ -5,6 +5,7 @@ permalink: "/"
 layout: default
 ---
 
+{% include header.html %}
 {% include hero.html %}
 {% include program.html %}
 {% include timeline.html %}
