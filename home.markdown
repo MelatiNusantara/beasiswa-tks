@@ -9,6 +9,6 @@ layout: default
 {% include hero.html %}
 {% include about.html %}
 {% include program.html %}
-{% include registration.html %}
+{% include registrasi.html %}
 {% include timeline.html %}
 {% include footer.html %}
