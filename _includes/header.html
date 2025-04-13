@@ -1,0 +1,44 @@
+<!-- Tambahkan ini di dalam <head> -->
+<!-- CDN Tailwind jika kamu belum pakai Tailwind -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 px-[120px] py-6 bg-white shadow-sm border-b border-[#FDA79B]">
+  <div class="max-w-[1208px] h-[55px] mx-auto flex items-center justify-between">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="images/iconNavbar.png" alt="Shiplab Logo" class="h-8" />
+      <span class="text-xl font-bold text-gray-800">TKS</span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="hidden md:flex gap-8 text-lg text-gray-700 font-medium">
+      <a href="#home" class="hover:text-[#FA541C] active-link" data-link="home">Home</a>
+      <a href="#about" class="hover:text-[#FA541C]" data-link="about">About</a>
+      <a href="#program" class="hover:text-[#FA541C]" data-link="program">Program</a>
+      <a href="#registration" class="hover:text-[#FA541C]" data-link="registration">Procedure</a>
+      <a href="#timeline" class="hover:text-[#FA541C]" data-link="timeline">Timeline</a>
+      <a href="#contact" class="hover:text-[#FA541C]" data-link="contact">Contact</a>
+    </nav>
+
+    <!-- Login & Sign Up Area -->
+    <div class="flex items-center gap-4 text-lg font-medium">
+      <!-- Kosong sementara -->
+    </div>
+  </div>
+</header>
+
+<!-- Smooth Scroll & Active Link Script -->
+<script>
+  // Smooth scroll behavior
+  document.documentElement.style.scrollBehavior = "smooth";
+
+  const links = document.querySelectorAll("nav a");
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      links.forEach(l => l.classList.remove("text-[#FA541C]"));
+      this.classList.add("text-[#FA541C]");
+    });
+  });
+</script>
