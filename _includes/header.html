@@ -1,0 +1,43 @@
+<!-- Tailwind CDN jika belum dipakai -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Header -->
+<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 50; background-color: white; padding: 0.5rem 0.5rem; border-bottom: 2px solid #FDA79B;">
+  <div class="max-w-[1208px] mx-auto px-6 lg:px-32 py-4 flex items-center justify-between">
+
+    <!-- Logo dan Teks TKS -->
+    <div class="flex items-center gap-2">
+      <img src="images/iconNavbar.png" alt="Shiplab Logo" class="h-8" />
+      <span class="text-xl font-bold text-gray-800">TKS</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="flex gap-8 text-lg text-gray-700 font-medium">
+      <a href="#home" class="nav-link" style="color: inherit;" data-link="home">Home</a>
+      <a href="#about" class="nav-link" style="color: inherit;" data-link="about">About</a>
+      <a href="#program" class="nav-link" style="color: inherit;" data-link="program">Program</a>
+      <a href="#registration" class="nav-link" style="color: inherit;" data-link="registration">Procedure</a>
+      <a href="#timeline" class="nav-link" style="color: inherit;" data-link="timeline">Timeline</a>
+      <a href="#contact" class="nav-link" style="color: inherit;" data-link="contact">Contact</a>
+    </nav>
+
+    <!-- Login Placeholder -->
+    <div class="flex items-center gap-4 text-lg font-medium">
+      <!-- Kosong dulu -->
+    </div>
+  </div>
+</header>
+
+<!-- Script untuk Active Link -->
+<script>
+  // Smooth scrolling
+  document.documentElement.style.scrollBehavior = "smooth";
+
+  const links = document.querySelectorAll("nav a");
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      links.forEach(l => l.classList.remove("text-[#FA541C]"));
+      this.classList.add("text-[#FA541C]");
+    });
+  });
+</script>
