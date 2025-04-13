@@ -1,0 +1,121 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #home {
+    position: relative;
+    background-color: #FFF9F4;
+    padding: 120px 40px 20px 40px;
+    overflow: hidden;
+    background-image: url('images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+  }
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.2;
+  }
+
+  h1 span {
+    color: #FC624C;
+  }
+
+  p {
+    color: #4a4a4a;
+    font-size: 1.125rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .btn-video {
+    display: flex;
+    align-items: center;
+    color: #FDA79B;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .btn-video svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+
+  .btn-video:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    #home {
+      padding: 60px 20px;
+      background-position: center top;
+      background-size: cover;
+    }
+
+    .content {
+      padding-top: 40px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <section id="home">
+    <div class="content">
+      <h1>
+        Get A <span>Chance</span> Tos
+        <br />
+        Make Happen <br /> Your Dream
+      </h1>
+
+      <p>
+        We support those who want to have the opportunity to study at their
+        dream college for a better future, and the development of our young
+        people for a better world.
+      </p>
+
+      <div class="button-container">
+        <a href="#" class="btn-video">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Play Video
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
