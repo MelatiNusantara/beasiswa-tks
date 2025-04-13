@@ -8,7 +8,7 @@ layout: default
 {% include header.html %}
 {% include hero.html %}
 {% include about.html %}
-{% include program.html %}
+{% include programs.html %}
 {% include registrasi.html %}
 {% include timeline.html %}
 {% include footer.html %}
