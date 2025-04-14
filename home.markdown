@@ -11,4 +11,5 @@ layout: default
 {% include program.html %}
 {% include registrasi.html %}
 {% include timeline.html %}
+{% include penerima.html %}
 {% include footer.html %}
