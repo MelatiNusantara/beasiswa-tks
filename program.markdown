@@ -6,5 +6,6 @@ permalink: "/program"
 
 {% include header.html %}
 {% include program.html %}
-<a href="registrasi.html" class="btn">Daftar Sekarang</a>
+{% include registrasi.html %}
+{% include timeline.html %}
 {% include footer.html %}
