@@ -8,8 +8,5 @@ layout: default
 {% include header.html %}
 {% include hero.html %}
 {% include about.html %}
-{% include program.html %}
-{% include registrasi.html %}
-{% include timeline.html %}
-{% include penerima.html %}
+<a href="program.html" class="btn">Lihat Program Beasiswa</a>
 {% include footer.html %}
