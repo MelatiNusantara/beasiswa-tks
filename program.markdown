@@ -1,7 +1,7 @@
 ---
 title: Program
 date: 2025-04-15 09:34:00 Z
-permalink: "/#program"
+permalink: "/program"
 ---
 
 {% include header.html %}
