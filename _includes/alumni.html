@@ -1,0 +1,74 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Penerima Beasiswa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Section Alumni -->
+<section class="py-16 bg-gradient-to-b from-[#FFF7E9] to-[#EBF5FF]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10">Alumni Penerima Beasiswa</h2>
+
+        <div class="bg-white rounded-2xl shadow-md p-8 max-w-3xl mx-auto">
+        <div class="flex flex-col items-center gap-4">
+            <div class="rounded-full overflow-hidden border-4 border-orange-500 w-40 h-40">
+            <img src="images/alumni1.jpg" alt="Budi Hartono" class="w-full h-full object-cover" />
+            </div>
+            <div>
+            <h3 class="text-lg font-semibold text-gray-800">Budi Hartono</h3>
+            <p class="text-sm text-gray-600">S1 Sastra Inggris</p>
+            </div>
+        </div>
+
+        <!-- Carousel indicators -->
+        <div class="flex justify-center mt-6 space-x-2">
+            <span class="w-3 h-3 bg-orange-400 rounded-full"></span>
+            <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+            <span class="w-3 h-3 bg-gray-300 rounded-full"></span>
+        </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Script untuk Slider -->
+  <script>
+    const slides = document.querySelectorAll(".alumni-slide");
+    const buttons = document.querySelectorAll(".alumni-btn");
+    let currentIndex = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        buttons[i].classList.remove("active");
+      });
+      slides[index].classList.add("active");
+      buttons[index].classList.add("active");
+      currentIndex = index;
+    }
+
+    function autoSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function startAutoSlide() {
+      slideInterval = setInterval(autoSlide, 5000); // ganti tiap 5 detik
+    }
+
+    function manualSlide(index) {
+      clearInterval(slideInterval); // stop auto saat user klik manual
+      showSlide(index);
+      startAutoSlide(); // mulai ulang auto setelah manual
+    }
+
+    // Inisialisasi awal
+    showSlide(currentIndex);
+    startAutoSlide();
+  </script>
+
+</body>
+</html>
