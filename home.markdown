@@ -8,4 +8,5 @@ layout: default
 {% include header.html %}
 {% include hero.html %}
 {% include about.html %}
+{% include alumni.html %}
 {% include footer.html %}
