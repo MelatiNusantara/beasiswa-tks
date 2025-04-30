@@ -1,0 +1,178 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Beasiswa TKS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .programbeasiswa-section {
+      background: linear-gradient(180deg, white, #FFEDD5, #FFFAE3);
+      padding: 60px 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .programbeasiswa-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .programbeasiswa-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+      font-size: 2.75rem;
+      color: #ff6600;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .programbeasiswa-icon img {
+      width: 144px;
+      height: 144px;
+      object-fit: contain;
+    }
+
+    .programbeasiswa-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .programbeasiswa-left,
+    .programbeasiswa-right {
+      flex: 1 1 500px;
+    }
+
+    .programbeasiswa-left p {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .programbeasiswa-left ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .programbeasiswa-left li {
+      list-style: none;
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+
+    .programbeasiswa-left li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #ff9900;
+      margin-right: 10px;
+    }
+
+    .programbeasiswa-right {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 16px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 20px rgba(255, 102, 0, 0.15);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .programbeasiswa-right:hover {
+      box-shadow: 0 12px 30px rgba(255, 102, 0, 0.25);
+    }
+
+    .programbeasiswa-right h3 {
+      text-align: center;
+      color: #cc5200;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .programbeasiswa-right ol {
+      font-size: 1.05rem;
+      padding-left: 20px;
+    }
+
+    .programbeasiswa-right li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .programbeasiswa-right li::before {
+      content: "\f0a4";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #ff6600;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }    
+    @media (max-width: 768px) {
+      .programbeasiswa-content {
+        flex-direction: column;
+      }
+
+      .programbeasiswa-container {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="program-beasiswa" class="programbeasiswa-section">
+    <div class="programbeasiswa-container">
+      <h2 class="programbeasiswa-title">
+        <span class="programbeasiswa-icon">
+          <img src="{{ 'images/TKS_LOGO_2025.png' | relative_url }}" alt="Beasiswa TKS">
+        </span>
+        Beasiswa TKS
+      </h2>
+
+      <div class="programbeasiswa-content">
+        <div class="programbeasiswa-left">
+          <p>
+            Kesempatan pengajuan beasiswa ini terbuka lebar bagi berbagai jenjang pendidikan, 
+            mulai dari Vokasi (D3/D4) hingga program Sarjana (S1) dan Pascasarjana (S2).<br><br>
+            Calon penerima beasiswa dapat memilih perguruan tinggi di seluruh Indonesia, dengan syarat:
+          </p>
+          <ul>
+            <li>Kampus seluruh Indonesia (prioritas Jawa & Surabaya)</li>
+            <li>Akreditasi BAN-PT minimum <strong>Baik</strong></li>
+            <li>Jurusan dengan dampak nyata bagi pengembangan daerah</li>
+          </ul>
+        </div>
+
+        <div class="programbeasiswa-right">
+          <h3><i class="fas fa-list-ul"></i> Komponen Beasiswa</h3>
+          <ol>
+            <li>Biaya Pendaftaran</li>
+            <li>Biaya Ujian</li>
+            <li>Biaya SPP / Tuition Fee</li>
+            <li>Biaya Wisuda</li>
+            <li>BPJS Kesehatan*</li>
+          </ol>
+        </div>
+      </div>      
+    </div>
+  </section>
+</body>
+</html>
