@@ -1,0 +1,72 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mitra Internship - Beasiswa TKS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .section-header {
+      color: #1D3557;
+    }
+    .contact-box {
+      background-color: #1D3557;
+      color: white;
+    }
+    .contact-box a {
+      color: #FBBF24;
+      font-weight: bold;
+    }
+
+    /* Simple fade-in animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-[#1D3557]">Beasiswa TKS</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-[#1D3557] transition duration-300">Beranda</a>
+        <a href="partnership-donatur.html" class="text-gray-600 hover:text-[#1D3557] transition duration-300">Donatur</a>
+        <a href="partnership-mitra.html" class="text-[#1D3557] font-semibold">Mitra</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container mx-auto px-4 py-12 animate-fadeIn">
+    <section class="bg-white rounded-xl shadow-md p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center section-header">Mitra Internship</h2>
+      
+      <p class="mb-4 text-lg">
+        <strong>Bentuk Talenta Terbaik:</strong> Bergabunglah sebagai Mitra Internship Beasiswa TKS.
+      </p>
+      <p class="mb-4 text-lg">
+        Kami mengundang perusahaan Anda untuk menjadi bagian dari ekosistem Beasiswa TKS yang berfokus pada pengembangan talenta unggul. 
+        Melalui kemitraan program internship, perusahaan Anda tidak hanya mendapatkan akses ke mahasiswa pilihan Beasiswa TKS yang termotivasi 
+        dan siap belajar, tetapi juga turut serta aktif dalam mempersiapkan mereka menghadapi dunia kerja dan mengaplikasikan ilmunya secara nyata.
+      </p>
+
+      <div class="contact-box p-6 mt-6 rounded-lg shadow-lg">
+        <p class="text-lg">Tertarik untuk berkolaborasi dan membentuk talenta masa depan?</p>
+        <p class="text-lg">
+          Hubungi tim kemitraan kami di 
+          <a href="mailto:kemitraan@beasiswatks.id" class="underline hover:text-yellow-400 transition duration-300">
+            kemitraan@beasiswatks.id
+          </a> 
+          untuk informasi lebih lanjut.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
