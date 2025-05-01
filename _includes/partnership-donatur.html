@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donatur - Dukung Pendidikan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .donatur-section {
+      background: linear-gradient(180deg, #f7faff 0%, #dfeeff 100%);
+      padding: 80px 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .donatur-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .donatur-left {
+      flex: 1 1 500px;
+    }
+
+    .donatur-left img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+    }
+
+    .donatur-right {
+      flex: 1 1 500px;
+      background: #fff;
+      border-left: 4px solid #D4AF37;
+      border-radius: 16px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .donatur-right:hover {
+      box-shadow: 0 12px 28px rgba(212, 175, 55, 0.3);
+    }
+
+    .donatur-title {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      font-weight: bold;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #D4AF37;
+      padding-bottom: 12px;
+    }
+
+    .donatur-subtitle {
+      font-size: 1.3rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .donatur-text {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+      .donatur-container {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+
+      .donatur-title {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .donatur-subtitle {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="partnership-donatur" class="donatur-section">
+    <div class="donatur-container">
+      <div class="donatur-left">
+        <img src="{{ 'images/donatur-banner.jpg' | relative_url }}" alt="Dukung Pendidikan Indonesia" />
+      </div>
+
+      <div class="donatur-right">
+        <h2 class="donatur-title"><i class="fas fa-hands-helping" style="color: #D4AF37;"></i> Donatur</h2>
+        <p class="donatur-subtitle">Jadilah Bagian dari Perubahan: Dukung Pendidikan dengan Donasi Anda</p>
+        <p class="donatur-text">
+          Anda memiliki kesempatan untuk secara langsung berkontribusi dalam mencetak pemimpin masa depan Indonesia. 
+          Setiap donasi yang Anda berikan akan membuka pintu kesempatan pendidikan tinggi berkualitas 
+          bagi mahasiswa berprestasi yang memiliki semangat untuk kembali dan membangun daerahnya.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
