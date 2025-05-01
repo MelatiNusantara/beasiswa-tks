@@ -1,0 +1,54 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program Fellowship - Beasiswa TKS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <section id="programfellowship" class="programfellowship-section">   
+    <div class="programfellowship-container">
+      <h1 class="programfellowship-title">
+        <i class="fas fa-seedling"></i> Changemaker Fellowship
+      </h1>
+      <!-- BOX UTAMA -->
+      <div class="programfellowship-mainbox">        
+        <div class="programfellowship-main-desc">
+          <div class="programfellowship-item-title">Program Pasca Studi</div>
+          Setelah menyelesaikan studi formal, perjalanan para pemimpin masa depan tidak berhenti. Beasiswa TKS menyediakan program Changemaker Fellowship, sebuah program pengembangan pasca studi yang dirancang khusus untuk membekali para lulusan berpotensi tinggi dengan keterampilan dan pengalaman yang dibutuhkan untuk menjadi agen perubahan yang berdampak. Program yang saat ini tersedia di antaranya:
+        </div>
+      </div>
+
+      <!-- 2 BOX PENJABARAN -->
+      <div class="programfellowship-list">
+        <div class="programfellowship-item">
+          <div class="programfellowship-item-title">Leadership and Entrepreneurship Training</div>
+          <div class="programfellowship-item-desc">
+            Program ini bertujuan mengasah jiwa kepemimpinan dan naluri kewirausahaan melalui serangkaian pelatihan intensif selama 6 hingga 12 bulan. Program ini akan membekali para fellow dengan pengetahuan strategis, kemampuan komunikasi yang efektif, serta pemahaman mendalam tentang inovasi dan pengembangan bisnis. Mereka akan belajar langsung dari para ahli industri, pemimpin inspiratif, dan sesama fellow yang memiliki visi yang sama.
+          </div>
+        </div>
+
+        <div class="programfellowship-item">
+          <div class="programfellowship-item-title">Internship Program</div>
+          <div class="programfellowship-item-desc">
+            Program ini akan memberikan pengalaman kerja nyata yang tak ternilai harganya. Para fellow mendapat kesempatan untuk ditempatkan di berbagai organisasi mitra terkemuka, yang akan memberikan kesempatan untuk mengaplikasikan pengetahuan yang telah dipelajari, membangun jaringan profesional, dan memahami dinamika industri secara langsung. Pengalaman ini akan menjadi landasan yang kuat bagi karir mereka di masa depan, mempersiapkan mereka untuk tidak hanya menjadi pekerja yang kompeten, tetapi juga inovator dan pemimpin yang mampu menciptakan perubahan positif bagi masyarakat dan bangsa.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      anime({
+        targets: '.programfellowship-item',
+        opacity: [0, 1],
+        translateY: [50, 0],
+        delay: anime.stagger(200),
+        duration: 1000,
+        easing: 'easeOutExpo'
+      });
+    });
+  </script>
+</body>
+</html>
