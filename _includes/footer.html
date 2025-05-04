@@ -1,0 +1,59 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footer Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <footer class="bg-white text-gray-700 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Logo & Intro -->
+      <div class="space-y-4">
+        <h4 class="text-xl font-bold text-[#FA541C]">TKS Foundation</h4>
+        <p class="text-sm text-gray-600">Bersama menciptakan masa depan Indonesia yang lebih cerah melalui pendidikan berkualitas.</p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-[#FA541C] font-semibold text-lg mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-[#FA541C] transition">Program Beasiswa</a></li>
+          <li><a href="#" class="hover:text-[#FA541C] transition">Mitra Internship</a></li>
+          <li><a href="#" class="hover:text-[#FA541C] transition">Donatur</a></li>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <h4 class="text-[#FA541C] font-semibold text-lg mb-4">Information</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="{{ '/program/beasiswa' | relative_url }}" class="hover:text-[#FA541C] transition">Sign Up</a></li>
+          <li><a href="{{ '/' | relative_url }}" class="hover:text-[#FA541C] transition">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h4 class="text-[#FA541C] font-semibold text-lg mb-4">Get In Touch</h4>
+        <p class="mb-3 text-sm text-gray-600">Follow kami di media sosial:</p>
+        <div class="flex gap-4 text-2xl">
+          <a href="https://www.instagram.com/yourprofile" class="text-[#E4405F] hover:scale-110 transform transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" class="text-[#0077B5] hover:scale-110 transform transition">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg-gray-50 border-t border-gray-100 py-4 text-center text-xs text-gray-500">
+      © 2025 TKS Foundation. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
