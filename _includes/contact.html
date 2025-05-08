@@ -1,0 +1,155 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Program Beasiswa TKS</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .contact-section {
+            background: linear-gradient(180deg, #f7faff 0%, #dfeeff 100%);
+            padding: 80px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .contact-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .contact-content {
+            background: #fff;
+            border-left: 4px solid #D4AF37;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .contact-content p {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info i {
+            color: #D4AF37;
+            margin-right: 10px;
+        }
+
+        .contact-social {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .contact-social a {
+            font-size: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .contact-social a.instagram i {
+            color: #E1306C;
+        }
+
+        .contact-social a.linkedin i {
+            color: #0077B5;
+        }
+
+        .contact-social a:hover i {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-title {
+            font-size: 2rem;
+            }
+
+            .contact-container {
+            padding: 0 20px;
+            }
+
+            .contact-content {
+            padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#FFF7E9] to-[#EBF5FF]">
+  <section class="bg-gradient-to-b from-[#FFF7E9] to-[#EBF5FF] py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-yellow-500 inline-block pb-2">Contact Us</h2>
+
+        <div class="bg-white shadow-xl rounded-2xl p-8 text-left mt-8 border-l-4 border-yellow-400">
+        <p class="text-lg text-gray-700 mb-6">Anda memiliki pertanyaan? Hubungi kami:</p>
+
+        <div class="space-y-4">
+            <!-- Email -->
+            <div class="flex items-center space-x-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon" class="w-6 h-6">
+                <a href="mailto:future@talentaks.org" class="text-gray-700 font-medium hover:underline hover:text-yellow-600 transition duration-200">future@talentaks.org</a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center space-x-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+            <a href="https://www.instagram.com/username" target="_blank" class="text-gray-700 hover:underline">Instagram</a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex items-center space-x-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+            <a href="https://www.linkedin.com/company/username" target="_blank" class="text-gray-700 hover:underline">LinkedIn</a>
+            </div>
+
+            <!-- Alamat -->
+            <div class="flex items-start space-x-3 mt-4">
+            <svg class="w-6 h-6 text-yellow-500 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <div>
+                <p class="text-gray-700 font-semibold">Alamat Kantor:</p>
+                <p class="text-gray-600">
+                Prakarsa Building, lt. 2, Jalan Gubernur Suryo 1B<br>
+                Surabaya 60271, Jawa Timur, Indonesia
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
