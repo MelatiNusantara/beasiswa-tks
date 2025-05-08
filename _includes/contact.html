@@ -1,0 +1,134 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Program Beasiswa TKS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .contact-section {
+            background: linear-gradient(180deg, #fefefe, #f2f2f2);
+            padding: 80px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .contact-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .contact-content {
+            background: #fff;
+            border-left: 4px solid #D4AF37;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .contact-content p {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info i {
+            color: #D4AF37;
+            margin-right: 10px;
+        }
+
+        .contact-social {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .contact-social a {
+            font-size: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .contact-social a.instagram i {
+            color: #E1306C;
+        }
+
+        .contact-social a.linkedin i {
+            color: #0077B5;
+        }
+
+        .contact-social a:hover i {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-title {
+            font-size: 2rem;
+            }
+
+            .contact-container {
+            padding: 0 20px;
+            }
+
+            .contact-content {
+            padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-title">Contact Us</h2>
+
+      <div class="contact-content">
+        <p>Anda memiliki pertanyaan? Hubungi kami:</p>
+
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> Email: <a href="mailto:future@talentaks.org">future@talentaks.org</a></p>
+
+           <div class="contact-social">
+            <a href="https://www.instagram.com/beasiswatks" class="instagram" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/beasiswa-talentaks" class="linkedin" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+           </div>
+
+          <p><i class="fas fa-map-marker-alt"></i> Alamat Kantor:</p>
+          <p>Prakarsa Building, lt. 2, Jalan Gubernur Suryo 1B<br>
+            Surabaya 60271, Jawa Timur, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
