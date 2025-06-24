@@ -6,6 +6,7 @@ permalink: "/program"
 
 {% include header.html %}
 {% include program.html %}
+{% include kriteria-pendaftaran.html %}
 {% include registrasi.html %}
 {% include timeline.html %}
 {% include footer.html %}
