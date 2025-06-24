@@ -6,6 +6,7 @@ permalink: "/program/beasiswa"
 
 {% include header.html %}
 {% include program-beasiswa.html %}
+{% include kriteria-pendaftaran.html %}
 {% include registrasi.html %}
 {% include timeline.html %}
 {% include footer.html %}
